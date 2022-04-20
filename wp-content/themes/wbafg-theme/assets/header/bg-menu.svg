@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="414" height="736" viewBox="0 0 414 736">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.5" y1="1.373" x2="1.015" y2="0.091" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0.8"/>
+      <stop offset="0.433" stop-color="#0d0d0d"/>
+      <stop offset="1" stop-color="#0b0b0b" stop-opacity="0.706"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rechteck_700" data-name="Rechteck 700" width="414" height="736" fill="url(#linear-gradient)" style="mix-blend-mode: multiply;isolation: isolate"/>
+</svg>

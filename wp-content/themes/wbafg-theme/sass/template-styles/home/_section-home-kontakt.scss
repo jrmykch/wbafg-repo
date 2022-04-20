@@ -1,0 +1,195 @@
+// SECTION AND CONTAINER
+
+.section-home-kontakt .container {
+    background-color: #F0F0F0;
+    padding: 1.5em;
+    padding-bottom: 3.5em;
+
+    @include for-tablet-portrait-up {
+        padding: 2.5em 3em;
+    }
+
+    @include for-desktop-up {
+        padding: 5em;
+    }
+}
+
+.mobile-container {
+    @include for-tablet-portrait-up {
+        display: none;
+    }
+}
+
+.tablet-up-container {
+    display: none;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include for-tablet-portrait-up {
+        display: flex;
+
+    }
+
+    @include for-desktop-up {
+        height: 650px;
+    }
+
+    @include for-big-desktop-up {
+        height: 950px;
+    }
+}
+
+.tablet-up-container .kontakt-links {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 3em;
+
+    @include for-desktop-up {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
+    @include for-big-desktop-up {
+        max-width: 500px;
+        padding: 0;
+        margin-left: clamp(250px, 20vw, 550px);
+        gap: 40px;
+    }
+}
+
+.tablet-up-container .kontakt-links .header-container h2, h3 {
+   color: $color_bg-dark;
+}
+
+.tablet-up-container .kontakt-links p {
+    @include for-big-desktop-up {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+ }
+
+// HEADER (Wie bei Referenzen)
+
+.section-home-kontakt .tablet-up-container .header-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+}
+
+.section-home-kontakt .tablet-up-container .header-container h2 {
+    font-size: clamp(1.75em, 2.75vw + 1, 2.75em);
+    margin-bottom: -10px;
+    color: $color_bg-dark;
+}
+
+.section-home-kontakt .tablet-up-container .header-container h3 {
+    font-size: clamp(1.5em, 3.8125vw, 2.8125em);
+    color: $color_bg-dark;
+}
+
+// CONTENT
+
+.section-home-kontakt .tablet-up-container .text-container {
+    @include for-phone-only {
+        padding-bottom: 20px;
+    }
+}
+
+.section-home-kontakt .tablet-up-container .info-container {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+
+    @include for-big-desktop-up {
+        max-width: auto;
+        min-width: 100%;
+    }
+}
+
+.section-home-kontakt .tablet-up-container .info-container > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #FFF;
+    min-width: 100%;
+    max-height: max-content;
+    padding: 0.5em;
+}
+
+.info-container {
+
+    @include for-phone-only {
+        padding-top: 25px;
+    }
+}
+
+.info-container a {
+    margin-left: 10px;
+    color: $color_bg-dark;
+}
+
+.phone-info {
+    border-bottom: 2.5px solid $color_accent-yellow;
+}
+
+// IMAGE
+
+.mobile-image-container {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -6px;
+}
+
+.mobile-image-container .name-container {
+    position: relative;
+    max-width: max-content;
+    height: max-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+// MORE MOBILE SETTINGS
+
+.info-container .phone-info, .mail-info {
+    background-color: #FFF;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .5em;
+}
+
+.werner-info {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    @include for-desktop-up {
+        margin-right: -100px;
+    }
+}
+
+.werner-info span {
+    font-family: $font_secondary;
+}
+
+
+
+
+
+
+
+
+

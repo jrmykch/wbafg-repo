@@ -1,0 +1,241 @@
+// SECTION AND CONTAINER
+
+.section-home-rezensionen {
+    background-color: $color_bg-white;
+}
+
+.section-home-rezensionen .container {
+    padding: 1.5em;
+    padding-bottom: 5em;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    @include for-tablet-portrait-up {
+        padding: 2.5em 3em;
+        padding-bottom: 5em;
+    }
+
+    @include for-desktop-up {
+        padding: 5em;
+        padding-block: clamp(2.5em, 5%, 9.375em);
+
+    }
+
+    @include for-big-desktop-up {
+        padding-bottom: 10em;
+        max-width: 1280px;
+    }
+}
+
+// HEADER (Wie bei Referenzen)
+
+.section-home-rezensionen .container .header-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+.section-home-rezensionen .container .header-container h2 {
+    font-size: clamp(1.75em, 2.75vw + 1, 2.75em);
+    margin-bottom: -10px;
+    color: $color_bg-dark;
+}
+
+.section-home-rezensionen .container .header-container h3 {
+    font-size: clamp(1.5em, 3.8125vw, 2.8125em);
+    color: $color_bg-dark;
+}
+
+// CONTENT
+
+.carousel-container {
+    min-height: 548px;
+    position: relative;
+    overflow: hidden;
+
+    @include for-tablet-portrait-up {
+        min-height: 450px;
+        overflow: inherit !important;
+    } 
+
+    @include for-big-desktop-up {
+        min-height: 450px;
+    }
+}
+
+.swiper-slide {
+    @include for-tablet-portrait-up {
+        height: auto !important;
+    }
+}
+
+.rezension-list-item {
+    width: 100%;
+    position: absolute;
+    inset: 0;
+
+    @include for-tablet-portrait-up {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        min-height: 100%;
+        gap: 15px;
+    }
+
+    @include for-big-desktop-up {
+        min-height: 450px;
+    }
+}
+
+.rezension-list-item .list-item-img {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    filter: brightness(90%);
+
+    @include for-tablet-portrait-up {
+        grid-column: span 1 / auto ;
+        grid-row: span 4 / auto ;
+        height: 100%;
+    }
+}
+
+.rezension-list-item .list-item-text {
+    position: relative;
+    background-color: $color_accent-yellow;
+    padding: 1em;
+    margin-bottom: 10px;
+    min-height: 150px;
+
+    @include for-tablet-portrait-up {
+        height: auto;
+        grid-column: span 1 / auto;
+        grid-row: span 3 / auto ;
+        margin-bottom: 0px;
+    }
+}
+
+.rezension-list-item .list-item-text p {
+    color: $color_bg-dark;
+    font-weight: 400;
+}
+
+.rezension-list-item .list-item-kunde {
+    position: relative;
+    background-color: $color_bg-dark;
+    padding: 1em;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include for-tablet-portrait-up {
+        height: auto;
+        grid-column: span 1 / auto;
+        grid-row: span 1 / auto ;
+    }
+
+    @include for-desktop-up {
+        left: 50px;
+    }
+}
+
+.rezension-list-item .list-item-kunde span {
+    color: $color_bg-white;
+}
+
+.rezension-list-item .list-item-kunde br {
+    display: none;
+}
+
+// Buttons 
+
+.swiper-button-prev, .swiper-button-next {
+    color: #D3D3D3 !important;
+    top: 125px !important;
+    opacity: 0.9 !important;
+    z-index: 2 !important;
+
+    @include for-big-desktop-up {
+        top: 200px !important;
+    }
+}
+
+.swiper-button-prev {
+
+    @include for-tablet-portrait-up {
+        left: -38.5px !important;
+    }
+    @include for-desktop-up {
+        left: -120px !important;
+    }
+}
+
+.swiper-button-next {
+    
+    @include for-tablet-portrait-up {
+        right: -38.5px !important;
+        font-size: 38px !important;
+    }
+
+    @include for-desktop-up {
+        right: -120px !important;
+    }
+}
+
+.swiper-button-disabled {
+    opacity: 0 !important;
+}
+
+.projekt-ansehen-inside {
+    display: inline-block;
+    min-width: max-content;
+    min-height: 25px;
+    position: absolute;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    z-index: 5;
+    padding-block: 0.25em;
+    padding-inline: 0.75em;
+    color: $color_bg-dark;
+    top: 105px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border: 2px solid $color_accent-yellow;
+    background-color: rgba($color: #FFFFFF, $alpha: 0.7);
+
+    @include for-tablet-portrait-up {
+        top: auto;
+        left: 100%;
+        bottom: -75px;
+        background-color: transparent;
+    }
+}
+
+
+
+.projekt-ansehen-inside:visited {
+    color: $color_bg-dark;
+}
+
+
+
+
+
+
+
+
+
+
+
+

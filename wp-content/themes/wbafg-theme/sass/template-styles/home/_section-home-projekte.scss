@@ -1,0 +1,208 @@
+// SECTION AND CONTAINER
+
+.section-home-projekte {
+    background-color: $color_bg-dark;
+}
+
+.section-home-projekte h1 {
+    color: $color_bg-white;
+}
+
+.section-home-projekte h2 {
+    color: $color_bg-white;
+    margin-bottom: -5px;
+}
+
+.section-home-projekte h3 {
+    color: $color_bg-white;
+}
+
+.section-home-projekte .container {
+    padding: 1.5em;
+
+    @include for-tablet-portrait-up {
+        padding: 2.5em 3em;
+    }
+
+    @include for-desktop-up {
+
+        padding: clamp(2.5em, 5%, 9.375em) clamp(7.5em, 15%, 300px);
+        
+    }
+}
+
+// HEADING
+
+.section-heading {
+    margin-bottom: 10px;
+
+    @include for-tablet-portrait-up {
+        margin-bottom: 25px;
+    }
+
+    @include for-desktop-up {
+        max-width: 1280px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+
+// IMAGE CONTAINER FOR MOBILE AND TABLET
+
+.image-container-mobile {
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    @include for-tablet-portrait-up {
+        gap: 10px;
+    }
+}
+
+.image-container-mobile img {
+    display: inline-block;
+    max-width: 50%;
+    width: calc(50% - 2.5px);    
+
+
+    @include for-tablet-portrait-up {
+        width: calc(50% - 5px);
+    }
+}
+
+.image-container-mobile img:nth-of-type(3n+1)  {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+// IMAGE CONTAINER FOR DESKTOP
+
+.image-container-desktop {
+    display: grid;
+    gap: 0.625rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 7.5vw;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    grid-row: span 2 / auto;
+    grid-column: span 4 / auto ;
+
+    transition: all .25s ease-in-out .1s;
+}
+
+.card:hover,
+.card:focus {
+    transform: scale(0.97);
+    transition: all .5s;
+    filter: brightness(55%);
+    border: 2px solid black;
+}
+
+
+.card-huge {
+    grid-row: span 4 / auto;
+    grid-column: span 12 / auto;
+}
+
+.card-large {
+    grid-row: span 4 / auto;
+    grid-column: span 8 / auto;
+}
+
+.card-normal {
+    grid-row: span 3 / auto;
+    grid-column: span 6 / auto;
+}
+
+// HIDING IMAGE-CONTAINER
+
+@media (max-width: 1199px) {
+    .image-container-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image-container-mobile {
+        display: none;
+    }
+}
+
+// BUTTON
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.button-container button {
+    border: 1px solid $color_accent-yellow;
+    background-color: $color_bg-dark;
+    color: $color_bg-white;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    padding: 1em;
+    font-size: .9rem;
+    margin-top: 15px;
+    margin-bottom: 35px;
+
+    @include for-desktop-up {
+        margin-top: 25px;
+    }
+}
+
+.button-container button:hover {
+    cursor: pointer;
+    background-color: $color_accent-yellow;
+    color: $color_bg-dark;
+}
+
+// SUB TEXT
+
+.sub {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.sub h2, h3 {
+    color: $color_bg-white;
+}
+
+.sub h2 {
+    font-size: clamp(1.75em, 2.75vw + 1, 2.75em);
+    margin-bottom: 0.1em;
+}
+
+.sub h3 {
+    margin-bottom: 25px;
+    line-height: 1.15em;
+}
+
+.sub p {
+    color: $color_bg-white;
+}

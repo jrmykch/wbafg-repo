@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="Gruppe_1850" data-name="Gruppe 1850" transform="translate(-0.305 -0.495)">
+    <circle id="Ellipse_69" data-name="Ellipse 69" cx="21" cy="21" r="21" transform="translate(0.305 0.494)" fill="#f0f023"/>
+    <g id="Rechteck_1180" data-name="Rechteck 1180" transform="translate(7.305 10.994)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="1.5">
+      <rect width="28" height="21" stroke="none"/>
+      <rect x="0.75" y="0.75" width="26.5" height="19.5" fill="none"/>
+    </g>
+    <g id="Gruppe_1689" data-name="Gruppe 1689" transform="translate(8.272 11.984)">
+      <path id="Pfad_86502" data-name="Pfad 86502" d="M584.825,7714.741l12.96,12.7,12.961-12.7" transform="translate(-584.825 -7714.741)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Pfad_86503" data-name="Pfad 86503" d="M604.87,7724l8.98,8.98" transform="translate(-587.744 -7714.738)" fill="none" stroke="#000" stroke-width="1.5"/>
+      <path id="Pfad_86504" data-name="Pfad 86504" d="M613.851,7724l-8.98,8.98" transform="translate(-604.87 -7714.738)" fill="none" stroke="#000" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44.695" height="42.45" viewBox="0 0 44.695 42.45">
+  <defs>
+    <filter id="Linie_291" x="0" y="0" width="44.695" height="21" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.325"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Linie_292" x="0" y="10.725" width="44.695" height="21" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+      <feFlood flood-opacity="0.325"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Linie_293" x="0" y="21.45" width="44.695" height="21" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-3"/>
+      <feFlood flood-opacity="0.325"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Komponente_34_1" data-name="Komponente 34 – 1" transform="translate(5.5 8.5)">
+    <g transform="matrix(1, 0, 0, 1, -5.5, -8.5)" filter="url(#Linie_291)">
+      <line id="Linie_291-2" data-name="Linie 291" x2="29.695" transform="translate(5.5 8.5)" fill="none" stroke="#fff" stroke-width="6"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -5.5, -8.5)" filter="url(#Linie_292)">
+      <line id="Linie_292-2" data-name="Linie 292" x2="29.695" transform="translate(5.5 19.23)" fill="none" stroke="#fff" stroke-width="6"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -5.5, -8.5)" filter="url(#Linie_293)">
+      <line id="Linie_293-2" data-name="Linie 293" x2="29.695" transform="translate(5.5 29.95)" fill="none" stroke="#fff" stroke-width="6"/>
+    </g>
+  </g>
+</svg>

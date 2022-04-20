@@ -1,0 +1,44 @@
+
+.section-home-hero {
+
+    margin-bottom: -29px;
+
+    @include for-phone-only {
+        margin-bottom: 0px;
+    }
+}
+
+.section-home-hero video {
+
+    display: block;
+    max-width: 100%;
+    min-height: 40vh;
+    object-fit: cover;
+    z-index: -1;
+
+    @include for-desktop-up {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+}
+
+#arrow-down {
+    z-index: 0;
+    position: relative;
+    bottom: 3em;
+    left: 49%;
+    right: 51%;
+
+    @include for-phone-only {
+        display: none;
+    }
+}
+
+
+  

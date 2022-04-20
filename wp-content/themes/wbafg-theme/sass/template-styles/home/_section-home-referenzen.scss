@@ -1,0 +1,86 @@
+// SECTION AND CONTAINER
+
+.section-home-referenzen {
+    background-color: $color_bg-dark;
+}
+
+.section-home-referenzen .container {
+    padding: 1.5em;
+
+    @include for-tablet-portrait-up {
+        padding: 2.5em 3em;
+    }
+
+    @include for-desktop-up {
+        padding: 5em;
+        padding-block: clamp(2.5em, 5%, 9.375em);
+    }
+
+
+}
+
+// HEADER
+
+.section-home-referenzen .container .header-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.section-home-referenzen .container .header-container h2 {
+    font-size: clamp(1.75em, 2.75vw + 1, 2.75em);
+    margin-bottom: -10px;
+    color: $color_bg-white;
+}
+
+
+.section-home-referenzen .container .header-container h3 {
+    font-size: clamp(1.5em, 3.8125vw, 2.8125em);
+    margin-bottom: 25px;
+    color: $color_bg-white;
+}
+
+.section-home-referenzen .container .header-container p {
+    color: $color_bg-white;
+}
+
+// REFERENZEN CONTENT
+
+.referenzen-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 13.5vh;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    @include for-desktop-up {
+        gap: 2rem;
+    }
+
+    @include for-big-desktop-up {
+        gap: 4rem;
+    }
+}
+
+.referenzen-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+
+    padding: clamp(5.28px, 5% , 1em);
+
+    grid-column: span 5 / auto ;
+
+    @include for-tablet-portrait-up {
+        grid-column: span 2 / auto;
+        width: clamp(150px, 100%, 200px);
+    }
+}
