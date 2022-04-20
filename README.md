@@ -1,2 +1,0 @@
-# wbafg-repo
-Agenturwebsite | Medienprojekt
